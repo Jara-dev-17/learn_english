@@ -1,0 +1,31 @@
+$primary: #0a2b5e;
+$secondary: #00f7ff;
+$white: #f2f2f2;
+
+.toolbar {
+  background-color: $primary;
+  color: $white;
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  &__space {
+    flex: 1 1 auto;
+  }
+
+  &__btn-conatainer {
+    display: flex;
+    gap: 1rem;
+    .btn {
+      font-weight: bold;
+      color: $primary;
+      transition: all, 0.5s ease-in-out;
+      &:hover {
+        background-color: $primary;
+        color: $secondary;
+      }
+    }
+  }
+}
