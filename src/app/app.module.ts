@@ -1,3 +1,5 @@
+import { LayoutBlogComponent } from './components/layout/layout-blog/layout-blog.component';
+import { BlogComponent } from './pages/blog/blog.component';
 import { LayoutAboutComponent } from './components/layout/layout-about/layout-about.component';
 import { AboutComponent } from './pages/about/about.component';
 import { LayoutLessonsComponent } from './components/layout/layout-lessons/layout-lessons.component';
@@ -28,6 +30,8 @@ import { LayoutComponent } from './components/layout/layout.component';
     LayoutLessonsComponent,
     AboutComponent,
     LayoutAboutComponent,
+    BlogComponent,
+    LayoutBlogComponent,
   ],
   imports: [
     BrowserModule,

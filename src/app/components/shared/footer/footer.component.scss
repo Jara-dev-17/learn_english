@@ -1,13 +1,11 @@
-$primary: #0a2b5e;
-$secondary: #00f7ff;
-$white: #f2f2f2;
+@use "../../../../SCSS/variables" as v;
 
 .toolbar {
-  background-color: $primary;
-  color: $white;
+  background-color: v.$primary;
+  color: v.$white;
 
   &__title {
-    font-size: 1.5rem;
+    font-size: v.$rem-2;
     font-weight: 600;
   }
 
@@ -17,14 +15,14 @@ $white: #f2f2f2;
 
   &__btn-conatainer {
     display: flex;
-    gap: 1rem;
+    gap: v.$rem-1;
     .btn {
       font-weight: bold;
-      color: $primary;
+      color: v.$primary;
       transition: all, 0.5s ease-in-out;
       &:hover {
-        background-color: $primary;
-        color: $secondary;
+        background-color: v.$primary;
+        color: v.$secondary;
       }
     }
   }

@@ -1,22 +1,25 @@
+@use "../../../../SCSS/variables" as v;
+
 .layout {
   height: auto;
-  margin: 1rem;
+  margin: v.$rem-1;
+  padding: v.$rem-1;
 
   &__image-container {
-    width: 100%;
-    height: 100vh;
+    width: v.$percent;
+    height: v.$vh;
     background-color: aqua;
-    margin-bottom: 1rem;
+    margin-bottom: v.$rem-1;
   }
 
   &__image {
-    width: 100%;
-    height: 100%;
+    width: v.$percent;
+    height: v.$percent;
   }
 
   .title {
-    margin: 1rem;
-    font-size: 3rem;
-    color: #0a2b5e;
+    margin: v.$rem-1;
+    font-size: v.$rem-5;
+    color: v.$primary;
   }
 }

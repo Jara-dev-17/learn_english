@@ -1,23 +1,26 @@
+@use "../../../../SCSS/variables" as v;
+
 .layout {
   height: auto;
-  margin: 1rem;
+  margin: v.$rem-1;
+  padding: v.$rem-1;
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 1rem;
+    margin: v.$rem-1;
 
     &__image {
-      max-width: 100%;
+      max-width: v.$percent;
       height: auto;
     }
   }
 
   &__title {
-    margin: 1rem;
+    margin: v.$rem-1;
     color: #0a2b5e;
-    font-size: 3rem;
+    font-size: v.$rem-5;
   }
 
   &__container-2 {
@@ -25,10 +28,10 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
-    margin: 1rem;
+    margin: v.$rem-1;
 
     &__image {
-      max-width: 100%;
+      max-width: v.$percent;
       height: auto;
     }
   }

@@ -1,51 +1,56 @@
+@use "../../../SCSS/variables" as v;
+
 .card-container {
-  width: 100%;
-  margin: 1rem auto;
-  padding: 1rem;
+  width: v.$percent;
+  padding: v.$rem-1;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 
   .card {
     max-width: 400px;
-    background-color: #0a2b5e;
-    color: aliceblue;
-    margin-bottom: 1rem;
+    background-color: v.$primary;
+    color: v.$white;
+    margin: {
+      bottom: v.$rem-1;
+    }
 
     &__header {
-      margin-bottom: 1rem;
-      color: #00f7ff;
+      margin: {
+        bottom: v.$rem-1;
+      }
+      color: v.$secondary;
     }
 
     &__content {
-      padding: 1rem;
+      padding: v.$rem-1;
     }
 
     &__actions {
       display: flex;
       justify-content: space-around;
-      gap: 1rem;
+      gap: v.$rem-1;
     }
 
     &__btn {
-      width: 100%;
+      width: v.$percent;
     }
 
     &__progress {
-      background-color: #00f7ff;
+      background-color: v.$secondary;
     }
   }
   .info {
-    background-color: #3b7fe6;
-    color: #00f7ff;
+    background-color: v.$info;
+    color: v.$secondary;
   }
 
   .buy {
-    background-color: #73a84c;
-    color: #6aff00;
+    background-color: v.$success;
+    color: v.$buy;
   }
 
   .divider {
-    background-color: #00f7ff;
+    background-color: v.$secondary;
   }
 }

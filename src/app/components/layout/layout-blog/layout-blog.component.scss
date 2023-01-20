@@ -1,8 +1,15 @@
-@use "../../../SCSS/variables" as v;
+@use "../../../../SCSS/variables" as v;
 
 .layout {
-  height: auto;
+  height: v.$vh;
   margin: v.$rem-1;
+  padding: v.$rem-1;
+
+  &__title {
+    margin: v.$rem-1;
+    color: #0a2b5e;
+    font-size: v.$rem-5;
+  }
 
   &__image-container {
     width: v.$percent;
@@ -20,5 +27,9 @@
     font-size: v.$rem-5;
     color: v.$primary;
     cursor: pointer;
+  }
+
+  .divider-vertical {
+    height: v.$percent;
   }
 }
